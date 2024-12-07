@@ -78,7 +78,7 @@ Sparky(
                 }
             });
             cmnd.sort();
-            type.sort().forEach((cmmd) => { ⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ🍉🐼
+            type.sort().forEach((cmmd) => {
                 menu+= `\n     *〔 ${cmmd} 〕*\n\n`
                 let comad = cmnd.filter(({
                     category
