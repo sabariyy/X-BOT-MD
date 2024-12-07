@@ -43,15 +43,15 @@ Sparky(
                 timeZone: "Asia/Kolkata"
             })
             .split(",");
-            let menu = `*╭━━━〔 𝐗ᴏᴜʟ 𝐒ᴇʀ ⁩〕━━━━···▸*
-*┃ ╭─────────────···▸*
-*┃ │Oᴡɴᴇʀ : ${BOT_INFO.split(";")[1]}*
-*┃ │Pʀᴇꜰɪx : ${HANDLERS}*
-*┃ │Mᴏᴅᴇ : ${WORK_TYPE}*
-*┃ │Uᴩᴛɪᴍᴇ : ${await m.uptime()}*
-*┃ │Pʟᴜɢɪɴꜱ : ${commands.length}*
-*┃ ╰─────────────···▸*
-*╰━━━━━━━━━━━━━━━━···▸*\n`;
+            let menu = `╭━━━〔 𝐗ᴏᴜʟ 𝐒ᴇʀ ⁩〕━━━━···▸
+┃ ╭─────────────···▸
+┃ │ Oᴡɴᴇʀ : ⺀𑁍 𝑺 𝚨 𝜝 𝜜 𝜞 𝜤  ▸ᝃ〔⛱️〕
+┃ │ Pʀᴇꜰɪx : ${HANDLERS}
+┃ │ Mᴏᴅᴇ : ${WORK_TYPE}
+┃ │ Uᴩᴛɪᴍᴇ : ${await m.uptime()}
+┃ │ Pʟᴜɢɪɴꜱ : ${commands.length}
+┃ ╰─────────────···▸
+╰━━━━━━━━━━━━━━━━···▸\n`;
             let cmnd = [];
             let Sparky;
             let type = [];
@@ -81,16 +81,18 @@ Sparky(
             });
             cmnd.sort();
             type.sort().forEach((cmmd) => {
-                menu+= `\n     *〔 ${cmmd} 〕*\n\n`
-                let comad = cmnd.filter(({
+                                    menu += `\n*╭━━━━━━━━━━━━━━━━━···▸*\n*┃  ╭─────────────┅┄▻*\n*┃  │  ${cmmd}*\n*┃  ╰┬────────────┅┄▻*\n*┃  ┌┤*\n`;
+                let comad= cmnd.filter(({
                     category
                 }) => category == cmmd)
                 comad.sort()
                 comad.forEach(({
                     Sparky
                 }, num) => {
-                   menu += `➩ _${Sparky.trim()}_\n`
+                    menu += `┃  │ ☆ _${Sparky.trim()}_\n`;
                  });
+                menu += `┃  ╰──────────────···▸
+                ╰━━━━━━━━━━━━━━━━━···▸\n`;
              });
            
         let sperky = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "X BOT MD V3","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
