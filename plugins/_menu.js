@@ -87,7 +87,7 @@ Sparky(
                 comad.forEach(({
                     Sparky
                 }, num) => {
-                   menu += `✰ _${Sparky.trim()}_\n`
+                   menu += `➩ _${Sparky.trim()}_\n`
                  });
              });
            
