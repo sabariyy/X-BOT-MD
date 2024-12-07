@@ -44,12 +44,12 @@ Sparky(
             })
             .split(",");
             let menu = `✰  𝐎ᴡɴᴇʀ : ⺀𑁍 𝑺 𝚨 𝜝 𝜜 𝜞 𝜤  ▸ᝃ〔⛱️〕
-✰  mode : ${WORK_TYPE}
-✰  prefix : ${HANDLERS}
-✰  date : ${date}
-✰  time : ${time}
-✰  uptime : ${await m.uptime()}
-✰  plugins : ${commands.length}\n\n`
+✰  𝐌ᴏᴅᴡ : ${WORK_TYPE}
+✰  𝐏ʀᴇꜰɪx : ${HANDLERS}
+✰  𝐃ᴀᴛᴇ : ${date}
+✰  𝐓ɪᴍᴇ : ${time}
+✰  𝐔ᴩᴛɪᴍᴇ : ${await m.uptime()}
+✰  𝐏ʟᴜɢɪᴍꜱ : ${commands.length}\n\n`
             let cmnd = [];
             let Sparky;
             let type = [];
@@ -78,8 +78,8 @@ Sparky(
                 }
             });
             cmnd.sort();
-            type.sort().forEach((cmmd) => {
-                menu+= `\n     *${cmmd}*\n\n`
+            type.sort().forEach((cmmd) => { ⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ🍉🐼
+                menu+= `\n     *〔 ${cmmd} 〕*\n\n`
                 let comad = cmnd.filter(({
                     category
                 }) => category == cmmd)
@@ -100,7 +100,7 @@ sourceUrl: URL,
 mediaUrl: URL,
 mediaType: 1,
 showAdAttribution: true,
-renderLargerThumbnail: false,
+renderLargerThumbnail: true,
 thumbnailUrl: `${BOT_INFO.split(";")[2]}` }}},{ quoted: sperky })      
     }
       } catch (e) {
