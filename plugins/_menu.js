@@ -43,13 +43,13 @@ Sparky(
                 timeZone: "Asia/Kolkata"
             })
             .split(",");
-            let menu = `•  owner : ${BOT_INFO.split(";")[1]}
-•  mode : ${WORK_TYPE}
-•  prefix : ${HANDLERS}
-•  date : ${date}
-•  time : ${time}
-•  uptime : ${await m.uptime()}
-•  plugins : ${commands.length}\n ${readMore}\n\n`
+            let menu = `✰  𝐎ᴡɴᴇʀ : ⺀𑁍 𝑺 𝚨 𝜝 𝜜 𝜞 𝜤  ▸ᝃ〔⛱️〕
+✰  mode : ${WORK_TYPE}
+✰  prefix : ${HANDLERS}
+✰  date : ${date}
+✰  time : ${time}
+✰  uptime : ${await m.uptime()}
+✰  plugins : ${commands.length}\n\n`
             let cmnd = [];
             let Sparky;
             let type = [];
@@ -87,7 +87,7 @@ Sparky(
                 comad.forEach(({
                     Sparky
                 }, num) => {
-                   menu += `• ${Sparky.trim()}\n`
+                   menu += `✰ _${Sparky.trim()}_\n`
                  });
              });
            
